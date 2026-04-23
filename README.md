@@ -1,2 +1,2 @@
-# keeping-score
-Automated daily email notifications summarizing the previous day's MLB games.
+# nba-keeping-score
+Automated daily email notifications summarizing the previous day's NBA games.
