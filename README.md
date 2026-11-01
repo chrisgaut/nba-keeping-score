@@ -32,7 +32,9 @@ Rscript -e 'testthat::test_dir("tests/testthat")'
 | `R/utils.R` | Dates (Eastern time), throttled HTTP, commented-table handling |
 | `R/schedule.R` | Builds `data/schedule.csv` from the season's monthly schedule pages |
 | `R/scrape.R` | Fetches and parses a box score page |
+| `R/players.R` | Maintains the player id cache (seed with `Rscript R/players.R`) |
 | `data/schedule.csv` | Every game of the season: date, teams, game id, box score URL |
+| `data/players.csv` | Player id cache: name, current team, player page URL, last game seen |
 | `tests/testthat/` | Parser tests against saved Basketball Reference pages |
 
 ## Being polite to Basketball Reference
