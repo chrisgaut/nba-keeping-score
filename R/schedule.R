@@ -77,6 +77,44 @@ update_schedule <- function(season, path = SCHEDULE_PATH) {
   invisible(schedule)
 }
 
+# The schedule changes during the season (NBA Cup knockout games, postponed
+# and rescheduled games, playoffs), so the daily run re-fetches the month
+# containing `date` and replaces that month in the cached schedule. One request.
+schedule_month_path <- function(date) {
+  date <- as.Date(date)
+  month <- tolower(month.name[as.integer(format(date, "%m"))])
+  sprintf("/leagues/NBA_%d_games-%s.html", season_for_date(date), month)
+}
+
+merge_schedule_month <- function(schedule, month_games, date) {
+  month <- format(as.Date(date), "%Y-%m")
+  dplyr::bind_rows(
+    dplyr::filter(schedule, format(game_date, "%Y-%m") != month),
+    month_games
+  ) |>
+    dplyr::distinct(game_id, .keep_all = TRUE) |>
+    dplyr::arrange(game_date, game_id)
+}
+
+refresh_schedule_month <- function(date, path = SCHEDULE_PATH) {
+  month_games <- parse_schedule_page(bref_get(schedule_month_path(date)))
+  schedule <- merge_schedule_month(read_schedule(path), month_games, date)
+  readr::write_csv(schedule, path, na = "")
+  log_info("Refreshed ", nrow(month_games), " games for ", format(as.Date(date), "%B %Y"), " in ", path)
+  invisible(schedule)
+}
+
+# Minutes after midnight for schedule start times like "7:00p" or "12:30p",
+# used to put games in tip-off order.
+start_minutes <- function(start_time_et) {
+  parts <- regmatches(start_time_et, regexec("^(\\d{1,2}):(\\d{2})([ap])$", start_time_et))
+  vapply(parts, function(p) {
+    if (length(p) != 4) return(NA_real_)
+    hour <- as.integer(p[2]) %% 12 + if (p[4] == "p") 12 else 0
+    hour * 60 + as.integer(p[3])
+  }, numeric(1))
+}
+
 read_schedule <- function(path = SCHEDULE_PATH) {
   readr::read_csv(
     path,

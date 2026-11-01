@@ -28,6 +28,7 @@ EMAIL_CSS <- paste(
   ".r td{background:#f7f7f7;font-size:11px;color:#666}",
   ".t td{font-weight:bold;border-top:1px solid #999}",
   ".d{color:#999;text-align:left}",
+  ".w{color:#a51d2d;background:#fdeceb;padding:6px 8px}",
   sep = "\n"
 )
 
@@ -147,16 +148,43 @@ email_date <- function(boxes) {
   dates
 }
 
-build_email_html <- function(boxes) {
+# `failures` lists games that could not be loaded (e.g. "BOS @ DET: <error>").
+# They are noted at the top, since the end of a long email gets clipped.
+build_email_html <- function(boxes, failures = character()) {
   heading <- format(email_date(boxes), "%A, %B %d, %Y")
+  failure_note <- if (length(failures) == 0) "" else paste0(
+    "<p class=\"w\">Could not load ", length(failures), if (length(failures) == 1) " game" else " games",
+    ":<br>", paste(html_escape(failures), collapse = "<br>"), "</p>"
+  )
+  email_document(paste0(
+    "<h1>NBA box scores &middot; ", html_escape(heading), "</h1>",
+    failure_note,
+    paste(vapply(boxes, render_game, character(1)), collapse = "")
+  ))
+}
+
+email_document <- function(body) {
   paste0(
     "<!DOCTYPE html><html><head><meta charset=\"utf-8\">",
     "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">",
     "<style>", EMAIL_CSS, "</style></head><body>",
-    "<h1>NBA box scores &middot; ", html_escape(heading), "</h1>",
-    paste(vapply(boxes, render_game, character(1)), collapse = ""),
+    body,
     "</body></html>"
   )
+}
+
+# Sent instead of the box score email when a run fails entirely.
+build_alert_html <- function(date, error_message) {
+  email_document(paste0(
+    "<h1>NBA box scores failed &middot; ", html_escape(format(as.Date(date), "%A, %B %d, %Y")), "</h1>",
+    "<p class=\"w\">", html_escape(error_message), "</p>",
+    "<p>Check the GitHub Actions run log for details. To re-run for this date, ",
+    "start the workflow manually with this date.</p>"
+  ))
+}
+
+alert_subject <- function(date) {
+  sprintf("NBA box scores FAILED: %s", format(as.Date(date), "%a %b %d"))
 }
 
 # A complete MIME message. Subject and body are base64-encoded so player names

@@ -1,6 +1,6 @@
 project_root <- normalizePath(testthat::test_path("..", ".."))
 for (file in list.files(file.path(project_root, "R"), pattern = "\\.R$", full.names = TRUE)) {
-  if (basename(file) != "main.R") source(file)
+  source(file)
 }
 
 # Fixtures are real Basketball Reference pages saved (gzipped) so the parsers

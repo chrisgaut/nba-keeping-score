@@ -32,6 +32,12 @@ names are set as repository secrets.
 All commands run from the project root.
 
 ```bash
+# Email last night's box scores (Eastern time)
+Rscript R/main.R
+
+# A specific night; --dry-run builds the email without sending it
+Rscript R/main.R --date 2026-10-24 --dry-run
+
 # Rebuild data/schedule.csv for the current season (or pass e.g. 2027)
 Rscript R/schedule.R
 
@@ -43,12 +49,13 @@ Rscript -e 'testthat::test_dir("tests/testthat")'
 
 | Path | Purpose |
 |---|---|
+| `R/main.R` | Daily entry point: schedule refresh, scraping, player cache, email |
 | `R/utils.R` | Dates (Eastern time), throttled HTTP, commented-table handling |
 | `R/schedule.R` | Builds `data/schedule.csv` from the season's monthly schedule pages |
 | `R/scrape.R` | Fetches and parses a box score page |
 | `R/players.R` | Maintains the player id cache (seed with `Rscript R/players.R`) |
 | `R/email.R` | Builds the HTML email and sends it through Gmail SMTP |
-| `data/schedule.csv` | Every game of the season: date, teams, game id, box score URL |
+| `data/schedule.csv` | Every game of the season: date, teams, game id, box score URL (each run refreshes the current month) |
 | `data/players.csv` | Player id cache: name, current team, player page URL, last game seen |
 | `tests/testthat/` | Parser tests against saved Basketball Reference pages |
 
