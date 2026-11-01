@@ -51,14 +51,6 @@ test_that("basic box score splits starters, reserves, DNPs, and totals", {
   expect_false("Reserves" %in% den$player)
 })
 
-test_that("advanced box score has the advanced columns", {
-  adv <- regulation$home$advanced
-  expect_true(all(c("ts_pct", "usg_pct", "off_rtg", "def_rtg", "bpm") %in% names(adv)))
-  expect_equal(adv$player_id[1], "cunnica01")
-  expect_equal(adv$ts_pct[1], ".545")
-  expect_equal(sum(adv$is_total), 1)
-})
-
 test_that("a missing table raises a clear error", {
   html <- "<html><body><table id='other'></table></body></html>"
   expect_error(parse_box_score(html, "202610200DET"), "line_score")

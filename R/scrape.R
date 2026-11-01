@@ -2,7 +2,7 @@
 #
 # parse_box_score() returns a list:
 #   game_id, game_date, start_time, arena
-#   visitor, home     each a list(abbr, name, pts, record, basic, advanced)
+#   visitor, home     each a list(abbr, name, pts, record, basic)
 #   line_score        one row per team: team, 1, 2, 3, 4, [1OT, 2OT, ...], T
 #   four_factors      one row per team: team, pace, efg_pct, tov_pct, ...
 #
@@ -35,8 +35,7 @@ parse_box_score <- function(html, game_id) {
       name = scorebox$name[[i]],
       pts = scorebox$pts[[i]],
       record = scorebox$record[[i]],
-      basic = parse_player_table(require_table(doc, sprintf("box-%s-game-basic", abbr), game_id)),
-      advanced = parse_player_table(require_table(doc, sprintf("box-%s-game-advanced", abbr), game_id))
+      basic = parse_player_table(require_table(doc, sprintf("box-%s-game-basic", abbr), game_id))
     )
   }
 
@@ -72,7 +71,7 @@ parse_team_table <- function(table) {
   dplyr::bind_rows(lapply(rows, row_cells))
 }
 
-# Player box score tables (basic and advanced). Starters come before the
+# Player box score tables. Starters come before the
 # "Reserves" header row; DNP-style rows have a single "reason" cell; team
 # totals live in <tfoot>.
 parse_player_table <- function(table) {
