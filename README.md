@@ -24,8 +24,28 @@ GMAIL_USER=you@gmail.com
 GMAIL_APP_PASSWORD=your-16-character-app-password
 ```
 
-`EMAIL_TO` is optional and defaults to `GMAIL_USER`. In GitHub Actions the same
-names are set as repository secrets.
+`EMAIL_TO` is optional and defaults to `GMAIL_USER`.
+
+### GitHub Actions
+
+`.github/workflows/daily-box-scores.yml` runs every day at 12:00 UTC (8 AM EDT /
+7 AM EST), emails last night's games, and commits any schedule or player
+updates back to the repo. `.github/workflows/tests.yml` runs the tests on every
+push.
+
+Add the credentials as repository secrets under **Settings → Secrets and
+variables → Actions → New repository secret**: `GMAIL_USER`,
+`GMAIL_APP_PASSWORD`, and optionally `EMAIL_TO`.
+
+To run it by hand (re-send a night, or test without sending), open
+**Actions → Daily box scores → Run workflow** and fill in the optional date
+and dry-run fields. Each run saves the email it built as a downloadable
+artifact for 14 days.
+
+GitHub disables scheduled workflows in public repos after 60 days without
+activity. During the season the daily data commits keep it active; after the
+off-season, re-enable it under **Actions** and run `Rscript R/schedule.R` for
+the new season.
 
 ## Usage
 
