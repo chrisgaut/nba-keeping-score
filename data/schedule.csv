@@ -120,8 +120,8 @@ game_id,game_date,start_time_et,visitor_abbr,visitor_name,home_abbr,home_name,bo
 202611040SAC,2026-11-04,10:00p,LAL,Los Angeles Lakers,SAC,Sacramento Kings,https://www.basketball-reference.com/boxscores/202611040SAC.html,final,
 202611040SAS,2026-11-04,9:30p,DAL,Dallas Mavericks,SAS,San Antonio Spurs,https://www.basketball-reference.com/boxscores/202611040SAS.html,final,
 202611040WAS,2026-11-04,7:00p,ATL,Atlanta Hawks,WAS,Washington Wizards,https://www.basketball-reference.com/boxscores/202611040WAS.html,final,
-202611050GSW,2026-11-05,10:00p,MIA,Miami Heat,GSW,Golden State Warriors,https://www.basketball-reference.com/boxscores/202611050GSW.html,scheduled,
-202611050PHO,2026-11-05,9:00p,ORL,Orlando Magic,PHO,Phoenix Suns,https://www.basketball-reference.com/boxscores/202611050PHO.html,scheduled,
+202611050GSW,2026-11-05,10:00p,MIA,Miami Heat,GSW,Golden State Warriors,https://www.basketball-reference.com/boxscores/202611050GSW.html,final,
+202611050PHO,2026-11-05,9:00p,ORL,Orlando Magic,PHO,Phoenix Suns,https://www.basketball-reference.com/boxscores/202611050PHO.html,final,
 202611060ATL,2026-11-06,7:00p,WAS,Washington Wizards,ATL,Atlanta Hawks,https://www.basketball-reference.com/boxscores/202611060ATL.html,scheduled,NBA Cup
 202611060CHO,2026-11-06,7:00p,BOS,Boston Celtics,CHO,Charlotte Hornets,https://www.basketball-reference.com/boxscores/202611060CHO.html,scheduled,NBA Cup
 202611060CLE,2026-11-06,7:30p,PHI,Philadelphia 76ers,CLE,Cleveland Cavaliers,https://www.basketball-reference.com/boxscores/202611060CLE.html,scheduled,NBA Cup
