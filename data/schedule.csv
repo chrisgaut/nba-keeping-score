@@ -169,10 +169,10 @@ game_id,game_date,start_time_et,visitor_abbr,visitor_name,home_abbr,home_name,bo
 202611110POR,2026-11-11,10:00p,OKC,Oklahoma City Thunder,POR,Portland Trail Blazers,https://www.basketball-reference.com/boxscores/202611110POR.html,final,
 202611110TOR,2026-11-11,7:00p,BOS,Boston Celtics,TOR,Toronto Raptors,https://www.basketball-reference.com/boxscores/202611110TOR.html,final,
 202611110UTA,2026-11-11,9:00p,ORL,Orlando Magic,UTA,Utah Jazz,https://www.basketball-reference.com/boxscores/202611110UTA.html,final,
-202611120MIN,2026-11-12,8:00p,DAL,Dallas Mavericks,MIN,Minnesota Timberwolves,https://www.basketball-reference.com/boxscores/202611120MIN.html,scheduled,
-202611120PHI,2026-11-12,7:00p,TOR,Toronto Raptors,PHI,Philadelphia 76ers,https://www.basketball-reference.com/boxscores/202611120PHI.html,scheduled,
-202611120PHO,2026-11-12,9:00p,CHO,Charlotte Hornets,PHO,Phoenix Suns,https://www.basketball-reference.com/boxscores/202611120PHO.html,scheduled,
-202611120WAS,2026-11-12,7:00p,DET,Detroit Pistons,WAS,Washington Wizards,https://www.basketball-reference.com/boxscores/202611120WAS.html,scheduled,
+202611120MIN,2026-11-12,8:00p,DAL,Dallas Mavericks,MIN,Minnesota Timberwolves,https://www.basketball-reference.com/boxscores/202611120MIN.html,final,
+202611120PHI,2026-11-12,7:00p,TOR,Toronto Raptors,PHI,Philadelphia 76ers,https://www.basketball-reference.com/boxscores/202611120PHI.html,final,
+202611120PHO,2026-11-12,9:00p,CHO,Charlotte Hornets,PHO,Phoenix Suns,https://www.basketball-reference.com/boxscores/202611120PHO.html,final,
+202611120WAS,2026-11-12,7:00p,DET,Detroit Pistons,WAS,Washington Wizards,https://www.basketball-reference.com/boxscores/202611120WAS.html,final,
 202611130CHI,2026-11-13,8:00p,ATL,Atlanta Hawks,CHI,Chicago Bulls,https://www.basketball-reference.com/boxscores/202611130CHI.html,scheduled,NBA Cup
 202611130HOU,2026-11-13,8:30p,UTA,Utah Jazz,HOU,Houston Rockets,https://www.basketball-reference.com/boxscores/202611130HOU.html,scheduled,NBA Cup
 202611130IND,2026-11-13,7:00p,NYK,New York Knicks,IND,Indiana Pacers,https://www.basketball-reference.com/boxscores/202611130IND.html,scheduled,NBA Cup
