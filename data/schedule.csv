@@ -173,15 +173,15 @@ game_id,game_date,start_time_et,visitor_abbr,visitor_name,home_abbr,home_name,bo
 202611120PHI,2026-11-12,7:00p,TOR,Toronto Raptors,PHI,Philadelphia 76ers,https://www.basketball-reference.com/boxscores/202611120PHI.html,final,
 202611120PHO,2026-11-12,9:00p,CHO,Charlotte Hornets,PHO,Phoenix Suns,https://www.basketball-reference.com/boxscores/202611120PHO.html,final,
 202611120WAS,2026-11-12,7:00p,DET,Detroit Pistons,WAS,Washington Wizards,https://www.basketball-reference.com/boxscores/202611120WAS.html,final,
-202611130CHI,2026-11-13,8:00p,ATL,Atlanta Hawks,CHI,Chicago Bulls,https://www.basketball-reference.com/boxscores/202611130CHI.html,scheduled,NBA Cup
-202611130HOU,2026-11-13,8:30p,UTA,Utah Jazz,HOU,Houston Rockets,https://www.basketball-reference.com/boxscores/202611130HOU.html,scheduled,NBA Cup
-202611130IND,2026-11-13,7:00p,NYK,New York Knicks,IND,Indiana Pacers,https://www.basketball-reference.com/boxscores/202611130IND.html,scheduled,NBA Cup
-202611130LAC,2026-11-13,10:30p,OKC,Oklahoma City Thunder,LAC,Los Angeles Clippers,https://www.basketball-reference.com/boxscores/202611130LAC.html,scheduled,NBA Cup
-202611130MIA,2026-11-13,8:00p,CLE,Cleveland Cavaliers,MIA,Miami Heat,https://www.basketball-reference.com/boxscores/202611130MIA.html,scheduled,NBA Cup
-202611130NOP,2026-11-13,8:00p,MEM,Memphis Grizzlies,NOP,New Orleans Pelicans,https://www.basketball-reference.com/boxscores/202611130NOP.html,scheduled,NBA Cup
-202611130ORL,2026-11-13,7:00p,MIL,Milwaukee Bucks,ORL,Orlando Magic,https://www.basketball-reference.com/boxscores/202611130ORL.html,scheduled,NBA Cup
-202611130SAC,2026-11-13,10:00p,POR,Portland Trail Blazers,SAC,Sacramento Kings,https://www.basketball-reference.com/boxscores/202611130SAC.html,scheduled,NBA Cup
-202611130SAS,2026-11-13,9:30p,GSW,Golden State Warriors,SAS,San Antonio Spurs,https://www.basketball-reference.com/boxscores/202611130SAS.html,scheduled,NBA Cup
+202611130CHI,2026-11-13,8:00p,ATL,Atlanta Hawks,CHI,Chicago Bulls,https://www.basketball-reference.com/boxscores/202611130CHI.html,final,NBA Cup
+202611130HOU,2026-11-13,8:30p,UTA,Utah Jazz,HOU,Houston Rockets,https://www.basketball-reference.com/boxscores/202611130HOU.html,final,NBA Cup
+202611130IND,2026-11-13,7:00p,NYK,New York Knicks,IND,Indiana Pacers,https://www.basketball-reference.com/boxscores/202611130IND.html,final,NBA Cup
+202611130LAC,2026-11-13,10:30p,OKC,Oklahoma City Thunder,LAC,Los Angeles Clippers,https://www.basketball-reference.com/boxscores/202611130LAC.html,final,NBA Cup
+202611130MIA,2026-11-13,8:00p,CLE,Cleveland Cavaliers,MIA,Miami Heat,https://www.basketball-reference.com/boxscores/202611130MIA.html,final,NBA Cup
+202611130NOP,2026-11-13,8:00p,MEM,Memphis Grizzlies,NOP,New Orleans Pelicans,https://www.basketball-reference.com/boxscores/202611130NOP.html,final,NBA Cup
+202611130ORL,2026-11-13,7:00p,MIL,Milwaukee Bucks,ORL,Orlando Magic,https://www.basketball-reference.com/boxscores/202611130ORL.html,final,NBA Cup
+202611130SAC,2026-11-13,10:00p,POR,Portland Trail Blazers,SAC,Sacramento Kings,https://www.basketball-reference.com/boxscores/202611130SAC.html,final,NBA Cup
+202611130SAS,2026-11-13,9:30p,GSW,Golden State Warriors,SAS,San Antonio Spurs,https://www.basketball-reference.com/boxscores/202611130SAS.html,final,NBA Cup
 202611140CLE,2026-11-14,7:30p,DAL,Dallas Mavericks,CLE,Cleveland Cavaliers,https://www.basketball-reference.com/boxscores/202611140CLE.html,scheduled,
 202611140MEM,2026-11-14,8:00p,BRK,Brooklyn Nets,MEM,Memphis Grizzlies,https://www.basketball-reference.com/boxscores/202611140MEM.html,scheduled,
 202611140MIA,2026-11-14,8:00p,DET,Detroit Pistons,MIA,Miami Heat,https://www.basketball-reference.com/boxscores/202611140MIA.html,scheduled,
