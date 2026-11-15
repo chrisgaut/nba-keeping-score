@@ -182,11 +182,11 @@ game_id,game_date,start_time_et,visitor_abbr,visitor_name,home_abbr,home_name,bo
 202611130ORL,2026-11-13,7:00p,MIL,Milwaukee Bucks,ORL,Orlando Magic,https://www.basketball-reference.com/boxscores/202611130ORL.html,final,NBA Cup
 202611130SAC,2026-11-13,10:00p,POR,Portland Trail Blazers,SAC,Sacramento Kings,https://www.basketball-reference.com/boxscores/202611130SAC.html,final,NBA Cup
 202611130SAS,2026-11-13,9:30p,GSW,Golden State Warriors,SAS,San Antonio Spurs,https://www.basketball-reference.com/boxscores/202611130SAS.html,final,NBA Cup
-202611140CLE,2026-11-14,7:30p,DAL,Dallas Mavericks,CLE,Cleveland Cavaliers,https://www.basketball-reference.com/boxscores/202611140CLE.html,scheduled,
-202611140MEM,2026-11-14,8:00p,BRK,Brooklyn Nets,MEM,Memphis Grizzlies,https://www.basketball-reference.com/boxscores/202611140MEM.html,scheduled,
-202611140MIA,2026-11-14,8:00p,DET,Detroit Pistons,MIA,Miami Heat,https://www.basketball-reference.com/boxscores/202611140MIA.html,scheduled,
-202611140MIN,2026-11-14,8:00p,CHI,Chicago Bulls,MIN,Minnesota Timberwolves,https://www.basketball-reference.com/boxscores/202611140MIN.html,scheduled,
-202611140NOP,2026-11-14,7:00p,DEN,Denver Nuggets,NOP,New Orleans Pelicans,https://www.basketball-reference.com/boxscores/202611140NOP.html,scheduled,
+202611140CLE,2026-11-14,7:30p,DAL,Dallas Mavericks,CLE,Cleveland Cavaliers,https://www.basketball-reference.com/boxscores/202611140CLE.html,final,
+202611140MEM,2026-11-14,8:00p,BRK,Brooklyn Nets,MEM,Memphis Grizzlies,https://www.basketball-reference.com/boxscores/202611140MEM.html,final,
+202611140MIA,2026-11-14,8:00p,DET,Detroit Pistons,MIA,Miami Heat,https://www.basketball-reference.com/boxscores/202611140MIA.html,final,
+202611140MIN,2026-11-14,8:00p,CHI,Chicago Bulls,MIN,Minnesota Timberwolves,https://www.basketball-reference.com/boxscores/202611140MIN.html,final,
+202611140NOP,2026-11-14,7:00p,DEN,Denver Nuggets,NOP,New Orleans Pelicans,https://www.basketball-reference.com/boxscores/202611140NOP.html,final,
 202611150BOS,2026-11-15,6:00p,DAL,Dallas Mavericks,BOS,Boston Celtics,https://www.basketball-reference.com/boxscores/202611150BOS.html,scheduled,
 202611150LAC,2026-11-15,4:30p,CHO,Charlotte Hornets,LAC,Los Angeles Clippers,https://www.basketball-reference.com/boxscores/202611150LAC.html,scheduled,
 202611150MIL,2026-11-15,8:00p,ATL,Atlanta Hawks,MIL,Milwaukee Bucks,https://www.basketball-reference.com/boxscores/202611150MIL.html,scheduled,
@@ -211,8 +211,8 @@ game_id,game_date,start_time_et,visitor_abbr,visitor_name,home_abbr,home_name,bo
 202611170TOR,2026-11-17,7:30p,NYK,New York Knicks,TOR,Toronto Raptors,https://www.basketball-reference.com/boxscores/202611170TOR.html,scheduled,
 202611180BRK,2026-11-18,7:30p,CHI,Chicago Bulls,BRK,Brooklyn Nets,https://www.basketball-reference.com/boxscores/202611180BRK.html,scheduled,
 202611180CLE,2026-11-18,7:00p,MEM,Memphis Grizzlies,CLE,Cleveland Cavaliers,https://www.basketball-reference.com/boxscores/202611180CLE.html,scheduled,
-202611180DAL,2026-11-18,9:30p,GSW,Golden State Warriors,DAL,Dallas Mavericks,https://www.basketball-reference.com/boxscores/202611180DAL.html,scheduled,
-202611180DEN,2026-11-18,9:00p,BOS,Boston Celtics,DEN,Denver Nuggets,https://www.basketball-reference.com/boxscores/202611180DEN.html,scheduled,
+202611180DAL,2026-11-18,8:00p,GSW,Golden State Warriors,DAL,Dallas Mavericks,https://www.basketball-reference.com/boxscores/202611180DAL.html,scheduled,
+202611180DEN,2026-11-18,9:30p,BOS,Boston Celtics,DEN,Denver Nuggets,https://www.basketball-reference.com/boxscores/202611180DEN.html,scheduled,
 202611180IND,2026-11-18,7:00p,HOU,Houston Rockets,IND,Indiana Pacers,https://www.basketball-reference.com/boxscores/202611180IND.html,scheduled,
 202611180LAL,2026-11-18,10:00p,UTA,Utah Jazz,LAL,Los Angeles Lakers,https://www.basketball-reference.com/boxscores/202611180LAL.html,scheduled,
 202611180MIA,2026-11-18,7:00p,MIL,Milwaukee Bucks,MIA,Miami Heat,https://www.basketball-reference.com/boxscores/202611180MIA.html,scheduled,
